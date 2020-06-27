@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="@dimen/_5sdp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="Trip Details"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15ssp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_10sdp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/trip_details_fragment_bus_iv"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/user" />
+
+            <TextView
+                style="@style/txtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Driver Name"
+                android:paddingLeft="15dp"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:id="@+id/add_trip_fragment_tv_driver_name"
+                style="@style/edittxtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittxt_corners"
+                android:text="Driver Name"
+                android:inputType="textCapWords"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/textcolor"/>
+
+            <TextView
+                style="@style/txtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Driver Phone"
+                android:inputType="textCapWords"
+                android:paddingLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/add_trip_fragment_tv_phone"
+                style="@style/edittxtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittxt_corners"
+                android:text="Driver Phone"
+                android:inputType="phone"
+                android:drawableLeft="@drawable/ic_call_black_24dp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/textcolor"/>
+
+            <TextView
+                style="@style/txtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bus ID"
+                android:inputType="textCapWords"
+                android:paddingLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/add_trip_fragment_tv_bus_id"
+                style="@style/edittxtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittxt_corners"
+                android:text="Bus ID"
+                android:inputType="textCapCharacters"
+                android:drawableLeft="@drawable/ic_directions_bus_black_24dp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/textcolor"/>
+
+            <TextView
+                style="@style/txtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number of Total Seats"
+                android:inputType="textCapWords"
+                android:paddingLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/add_trip_fragment_tv_no_seats"
+                style="@style/edittxtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittxt_corners"
+                android:text="Number of Seats"
+                android:inputType="number"
+                android:drawableLeft="@drawable/ic_event_seat_black_24dp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/textcolor"
+                />
+
+            <TextView
+                style="@style/txtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number of Available Seats"
+                android:inputType="textCapWords"
+                android:paddingLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/add_trip_fragment_tv_no_available_seats"
+                style="@style/edittxtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittxt_corners"
+                android:text="Number of Available Seats"
+                android:inputType="number"
+                android:drawableLeft="@drawable/ic_event_seat_black_24dp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/textcolor"
+                />
+
+            <TextView
+                style="@style/txtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number of Passengers"
+                android:inputType="textCapWords"
+                android:paddingLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/add_trip_fragment_tv_no_passengers"
+                style="@style/edittxtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittxt_corners"
+                android:text="Number of Passengers"
+                android:inputType="number"
+                android:drawableLeft="@drawable/ic_event_seat_black_24dp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/textcolor"
+                />
+
+            <TextView
+                style="@style/txtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trip Day"
+                android:inputType="textCapWords"
+                android:paddingLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/add_trip_fragment_tv_trip_day"
+                style="@style/edittxtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittxt_corners"
+                android:text="Trip Day"
+                android:inputType="number"
+                android:drawableLeft="@drawable/ic_event_seat_black_24dp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/textcolor"
+                />
+
+            <TextView
+                style="@style/txtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trip Time"
+                android:inputType="textCapWords"
+                android:paddingLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/add_trip_fragment_tv_trip_time"
+                style="@style/edittxtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittxt_corners"
+                android:text="Trip Time"
+                android:inputType="number"
+                android:drawableLeft="@drawable/ic_event_seat_black_24dp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/textcolor"
+                />
+
+
+            <TextView
+                style="@style/txtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destination"
+                android:paddingLeft="15dp"
+                android:inputType="textCapWords"
+                />
+
+            <TextView
+                android:id="@+id/add_trip_fragment_tv_destination"
+                style="@style/edittxtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittxt_corners"
+                android:text="Destination"
+                android:inputType="textCapWords"
+                android:drawableLeft="@drawable/ic_my_location_black_24dp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/textcolor"/>
+
+            <TextView
+                style="@style/txtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Assembly Point"
+                android:inputType="textCapWords"
+                android:paddingLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/add_trip_fragment_tv_assembly_point"
+                style="@style/edittxtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittxt_corners"
+                android:text="Assembly Point"
+                android:inputType="textCapWords"
+                android:drawableLeft="@drawable/ic_my_location_black_24dp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/textcolor"/>
+
+            <TextView
+                style="@style/txtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destination Point"
+                android:paddingLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/add_trip_fragment_tv_destination_point"
+                style="@style/edittxtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittxt_corners"
+                android:text="Destination Point"
+                android:inputType="textCapWords"
+                android:drawableLeft="@drawable/ic_my_location_black_24dp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/textcolor"/>
+
+            <TextView
+                style="@style/txtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How Many Seats You Want To Reserve?"
+                android:paddingLeft="15dp"
+                android:inputType="textCapWords"
+                android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="@dimen/_24ssp"
+                    android:textColor="@color/textcolor"
+                    android:background="@drawable/edittxt_corners"/>
+
+                <TextView
+                    android:id="@+id/no_seats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:padding="@dimen/_10sdp"
+                    android:background="@drawable/edittxt_corners"
+                    android:layout_margin="@dimen/_10sdp"/>
+
+                <Button
+                    android:id="@+id/plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textSize="@dimen/_24ssp"
+                    android:textColor="@color/textcolor"
+                    android:background="@drawable/edittxt_corners"/>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_70sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_13sdp"
+                app:cardElevation="5dp">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    style="@style/RippleStyleGrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_reserve_trip"
+                        style="@style/RippleStyleRed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_corners"
+                        android:onClick="onViewClicked"
+                        android:textSize="@dimen/_14ssp"
+                        android:text="reserve"
+                        android:textColor="@color/colorAccent" />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/qr_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

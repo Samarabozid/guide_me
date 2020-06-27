@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:src="@drawable/firebase"
+        android:id="@+id/imageview"
+        />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Available realtime database, can access to any driver easily and quickly"
+        android:textSize="@dimen/_20ssp"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_minus27sdp"
+        android:textColor="@color/textcolor"
+        android:layout_below="@+id/imageview"
+        />
+
+
+</RelativeLayout>

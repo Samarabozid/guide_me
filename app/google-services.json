@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "442755500944",
+    "firebase_url": "https://guide-me-2452c.firebaseio.com",
+    "project_id": "guide-me-2452c",
+    "storage_bucket": "guide-me-2452c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442755500944:android:2b73478a54885147dbc115",
+        "android_client_info": {
+          "package_name": "mona.project.guideme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442755500944-jm0j9oj73ar7ovekd28p23dctsapftvd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mona.project.guideme",
+            "certificate_hash": "0f29110d06576a9e73253d2ce3d9fb0200c58a86"
+          }
+        },
+        {
+          "client_id": "442755500944-tkp2f9uchh4e3ulj5ttlno0ucdh9q3an.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxsw54UGpoouJcSgx80FrUE8WzWyeGgFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442755500944-tkp2f9uchh4e3ulj5ttlno0ucdh9q3an.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
